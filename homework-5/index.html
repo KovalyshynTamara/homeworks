@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="get">
+            <p>
+                <label for="fullName">Повне ім'я</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Ковалишин Тамара Петрівна" autocomplete="on" required autofocus>
+            </p>
+            <br>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="user-email" placeholder="example@gmail.com" required></p>
+            <br>
+            <p>
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="пароль" autocomplete="on" required>
+            </p>
+            <br>
+            <p>
+                <label for="password">Пароль ще раз</label>
+                <input type="password" name="password" id="password2" placeholder="пароль" autocomplete="on" required>
+            </p>
+            <br>
+            <p> <label for="gender">Стать</label>
+                <input type="radio" name="gender" value="female" checked> Жіноча
+                <input type="radio" name="gender" value="female"> Чоловіча
+            </p>
+            <br>
+            <p> <label for="age">Вік</label>
+                <input type="number" min="18" max="100" required>
+            </p>
+            <br>
+            <p>
+            <label for="curses">Курс</label>
+            <select name="curses" required>
+                <option value="">=Виберіть курс=</option>
+                <option value="front-end">Front-End</option>
+                <option value="back-end">Back-End</option>
+                <option value="project-management">Project Management</option>
+                <option value="qa-manual">QA Manual</option>
+            </select>
+            </p>
+            <br>
+            <p> <label for="address">Повна адреса</label>
+                <textarea name="address" id="address" cols="30" rows="3" placeholder="Країна, регіон, місто/селище/село, вулиця" required></textarea>
+
+            </p>
+            <br>
+            <p>
+                <label for="personal-data"></label>
+                <input type="checkbox" name="personal-data" required>Я погоджуюсь з обробкою персональних даних
+            </p>
+            <br>
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватись</button>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
