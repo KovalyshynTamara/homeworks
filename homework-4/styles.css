@@ -72,6 +72,12 @@ h2 {
     height: 564px;
     
 }
+.skills-4 .container ul li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
 .portfolio {
     background-color: #e5e5e5;
     height: 2268px;
@@ -79,10 +85,12 @@ h2 {
     color: #070707;
 }
 
-.names-of-skills {
-    height: 75px;
-    line-height: 75px;
-}
 #footer {
     text-align: center;
+}
+
+#footer .container ul li {
+    display: inline-block;
+        list-style: none;
+        text-decoration: none;
 }
