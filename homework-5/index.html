@@ -16,8 +16,8 @@
             </p>
             <br>
             <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="user-email" placeholder="example@gmail.com" required></p>
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required></p>
             <br>
             <p>
                 <label for="password">Пароль</label>
@@ -30,17 +30,17 @@
             </p>
             <br>
             <p> <label for="gender">Стать</label>
-                <input type="radio" name="gender" value="female" checked> Жіноча
+                <input type="radio" id="gender" name="gender" value="female" checked> Жіноча
                 <input type="radio" name="gender" value="female"> Чоловіча
             </p>
             <br>
             <p> <label for="age">Вік</label>
-                <input type="number" min="18" max="100" required>
+                <input type="number" id="age" min="18" max="100" required>
             </p>
             <br>
             <p>
             <label for="curses">Курс</label>
-            <select name="curses" required>
+            <select name="curses" id="curses" required>
                 <option value="">=Виберіть курс=</option>
                 <option value="front-end">Front-End</option>
                 <option value="back-end">Back-End</option>
@@ -56,7 +56,7 @@
             <br>
             <p>
                 <label for="personal-data"></label>
-                <input type="checkbox" name="personal-data" required>Я погоджуюсь з обробкою персональних даних
+                <input type="checkbox" name="personal-data" id="personal-data" required>Я погоджуюсь з обробкою персональних даних
             </p>
             <br>
             <button type="reset">Очистити форму</button>
