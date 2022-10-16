@@ -10,35 +10,39 @@
 <body>
     <div class="container">
         <form action="#" method="get">
-            <p>
+            <div>
                 <label for="fullName">Повне ім'я</label>
                 <input type="text" name="fullName" id="fullName" placeholder="Ковалишин Тамара Петрівна" autocomplete="on" required autofocus>
-            </p>
+            </div>
             <br>
-            <p>
+            <div>
                 <label for="email" >Email</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required></p>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required></div>
             <br>
-            <p>
+            <div>
                 <label for="password">Пароль</label>
                 <input type="password" name="password" id="password" placeholder="пароль" autocomplete="on" required>
-            </p>
+            </div>
             <br>
-            <p>
+            <div>
                 <label for="password">Пароль ще раз</label>
                 <input type="password" name="password" id="password2" placeholder="пароль" autocomplete="on" required>
-            </p>
+            </div>
             <br>
-            <p> <label for="gender">Стать</label>
-                <input type="radio" id="gender" name="gender" value="female" checked> Жіноча
-                <input type="radio" name="gender" value="female"> Чоловіча
-            </p>
+            <div>
+                <label>
+                    <input type="radio" name="gender" value="female" checked>Жіноча
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="male" checked>Чоловіча
+                </label>
+            </div>
             <br>
-            <p> <label for="age">Вік</label>
+            <div> <label for="age">Вік</label>
                 <input type="number" id="age" min="18" max="100" required>
-            </p>
+            </div>
             <br>
-            <p>
+            <div>
             <label for="curses">Курс</label>
             <select name="curses" id="curses" required>
                 <option value="">=Виберіть курс=</option>
@@ -47,18 +51,18 @@
                 <option value="project-management">Project Management</option>
                 <option value="qa-manual">QA Manual</option>
             </select>
-            </p>
+            </div>
             <br>
-            <p> <label for="address">Повна адреса</label>
+            <div> <label for="address">Повна адреса</label>
                 <textarea name="address" id="address" cols="30" rows="3" placeholder="Країна, регіон, місто/селище/село, вулиця" required></textarea>
 
-            </p>
+            </div>
             <br>
-            <p>
+            <div>
                 <input type="checkbox" name="personal-data" id="personal-data" required>
                 <label for="personal-data">Я погоджуюсь з обробкою персональних даних</label>
                 
-            </p>
+            </div>
             <br>
             <button type="reset">Очистити форму</button>
             <button type="submit">Зареєструватись</button>
