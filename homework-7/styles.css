@@ -96,24 +96,26 @@ label {
 .check-wrap {
     background-color: #88839E;
 } 
-.check-wrap div:nth-child(2n) {
+.check-wrap li:nth-child(2n) {
     background-color: #7A7593;
 }
 
-.check-wrap div {
+.check-wrap li {
+    list-style: none;
+    height: 45px;
     border: 3px solid rgba(255, 255, 255, 0);
-        border-left: none;
-        border-right: none;
+    border-left: none;
+    border-right: none;
 }
 
-.check-wrap div:hover {
+.check-wrap li:hover {
     background-color: #625E77;
     border: 3px solid #fff;
     border-left: none;
     border-right: none;
 }
 
-.check-wrap div:active {
+.check-wrap li:active {
     background-color:#FF8984; 
 }
 
