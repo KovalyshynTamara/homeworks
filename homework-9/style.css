@@ -207,6 +207,9 @@ footer h3 {
     color: #2f281e;
     font-family: 'Figtree', sans-serif;
 }
+.tools-section .sign-up-now-btn {
+    margin-bottom: 78px;
+}
 .sign-up-now-btn {
     display: inline-block;
     width: 180px;
