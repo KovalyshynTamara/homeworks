@@ -113,9 +113,9 @@ h1 {
     background-color: #2f281e;
 }
 
-section {
+.tools-section {
     margin-bottom: 95px;
-    background: url(/homework-9/section-2/bg.png) center bottom no-repeat;
+    background: url(/homework-9/section-2/bg.png) center bottom/cover no-repeat;
 }
 h2 {
   
