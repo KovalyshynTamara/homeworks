@@ -114,8 +114,10 @@ h1 {
 }
 
 .tools-section {
+    background: url(section-2/bg.png) center bottom/cover no-repeat;
+}
+section {
     margin-bottom: 95px;
-    background: url(/homework-9/section-2/bg.png) center bottom/cover no-repeat;
 }
 h2 {
   
