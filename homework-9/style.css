@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
 }
 header {
-    padding-top: 17px;
+    padding-top: 18px;
     margin-bottom: 87px;
 }
 .main-menu ul {
@@ -206,6 +206,7 @@ input {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    padding-left: 10px;
 }
 footer h3 {
     margin-bottom: 22px;
@@ -244,11 +245,12 @@ footer {
 }
 
 footer input::placeholder {
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #BCD0E5;
-    margin-left: 30px;
+    
 }
 .button-sec2 {
     margin-left: 515px;
