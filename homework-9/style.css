@@ -56,7 +56,7 @@ nav.main-menu ul {
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
-    padding: 13px 25px;
+    padding: 12px 24px;
     transition: all 0.2s ease;
 }
 .btn-2 {
@@ -71,9 +71,9 @@ nav.main-menu ul {
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
-    padding: 13px 22.5px;
+    padding: 12px 22.5px;
     transition: all 0.2s ease;
-    margin-left: 29.5px;
+    margin-left: 28px;
 }
 /* SECTION 1 */
 h1 {
@@ -231,3 +231,23 @@ footer h3 {
     background-color: #2f281e;
 }
 
+footer {
+    margin-bottom: 70px;
+}
+
+footer input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BCD0E5;
+    margin-left: 30px;
+
+}
+
+.button-sec2 {
+    margin-left: 515px;
+}
+
+footer ul li a:hover {
+    color: #ff9900;
+}
