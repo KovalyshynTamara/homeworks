@@ -241,13 +241,10 @@ footer input::placeholder {
     line-height: 20px;
     color: #BCD0E5;
     margin-left: 30px;
-
 }
-
 .button-sec2 {
     margin-left: 515px;
 }
-
 footer ul li a:hover {
     color: #ff9900;
 }
