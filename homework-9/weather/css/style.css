@@ -54,13 +54,15 @@ h1 .wi {
     margin: 2px;
     padding-top: 28px;
     padding-bottom: 32px;
-    opacity: 0.7;
-    
-}
-.weather-list li:hover {
-    opacity: 1;
+   
 }
 
+ul:hover li {
+opacity: .5;
+}
+ul:hover li:hover {
+    opacity: 1;
+}
 .weather-list li.w50 {
     width: calc(50% - 4px);
 }
