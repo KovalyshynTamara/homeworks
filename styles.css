@@ -7,8 +7,11 @@ h1 {
     color: #7e5bc9;
 }
 ul {
-    color: #5021b6;
+    color: black;
 }
 ul li {
-    list-style: none;
+    list-style: none;   
+}
+ul li a {
+    text-decoration: none;
 }
