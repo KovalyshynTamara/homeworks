@@ -10,6 +10,10 @@ body {
     height: 100%;
 }
 body {
+     background-image: url(bg-picture.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 1045px 150px;
     font-family: 'PT Sans';
     color: #000000;
 }
@@ -178,12 +182,5 @@ section p {
 }
 #chapter_4 p:last-child {
     margin-top: -60px;
-    
-}
-main {
-    background-image: url(bg-picture.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 1045px 150px;
     
 }
