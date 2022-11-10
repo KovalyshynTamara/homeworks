@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+    <link rel="stylesheet" href="plagins/jquery.formstyler.css">
+    <link rel="stylesheet" href="plagins/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+    <div class="container grid">
+        <div class="create">
+            <form action="#" method="post" class=" grid-1">
+                <h1 class="columnspan2">Create an Account</h1>
+
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <div class="form-elem">
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="last-name">Last Name</label>
+                    <div class="form-elem">
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <div class="form-row columnspan2">
+                    <label for="email">E-mail</label>
+                    <div class="form-elem">
+                        <input type="email" name="email" id="email">
+                        <span class="msg">We'll never share your email with anyone else.</span>
+                    </div>
+                </div>
+                <div class="form-row columnspan2 grid-2">
+                <label for="male">
+                    <input type="radio" name="gender" value="male" id="male" checked>Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" value="female" id="female">Female
+                </label>
+                </div>
+                <div class="form-row select">
+                    <label for="country">Country</label>
+                    <div class="form-elem">
+                        <select name="country" id="country">
+                            <option value="select">Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="poland">Poland</option>
+                            <option value="england">England</option>
+                        </select>
+                    </div>    
+                </div>
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <div class="form-elem">
+                        <input type="text" name="city" id="city">
+                    </div>
+                </div>
+                <div class="form-row columnspan2 ">
+                    <button type="button" class="btn-sign-up">Sign Up</button>
+                    <span class="terms">
+                        By clicking the 'Sign Up' button, you confirm that you accept our<br> <a href="#">Terms of Use</a>&nbsp; and&nbsp;   <a href="#">Privacy Policy</a>
+                    </span>
+                </div>
+            </form>
+            <div class="last">
+                <a href="#" class="gray">Have an account?</a>
+                <a href="#">Log In</a>
+            </div>
+        </div>
+        <div class="profile">
+            <form action="#" method="post" class="grid-3">
+                <h1 class="columnspan">Profile</h1>
+
+
+                <div class="phone-file">
+                    <div class="photo-1">
+                        <img src="Image1.png" alt="photo" class="photo1">
+                    </div>
+                    <div class="form-row row-2">
+                        <div class="form-elem">
+                            <input type="file" name="file" id="file">
+                            <span class="msg">Up to 1 MB (300x300 px)</span>
+                        </div>
+                    </div>
+                    <div class="form-row btn-del">
+                        <button type="button" class="btn-delete">
+                            <span class="icon-icon-delete"></span>
+                        </button>
+                    </div>    
+                </div>
+                
+
+
+
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <div class="form-elem">
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="email-2">E-mail</label>
+                    <div class="form-elem">
+                        <input type="email" name="email-2" id="email-2">
+                    </div>
+                </div>
+
+                <div class="form-row select">
+                    <label for="country">Country</label>
+                    <div class="form-elem">
+                        <select name="country" id="country-2">
+                            <option value="select">Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="poland">Poland</option>
+                            <option value="england">England</option>
+                        </select>
+                    </div>    
+                </div>
+
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <div class="form-elem">
+                        <input type="text" name="city" id="city-2">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="zip-code">Zip Code</label>
+                    <div class="form-elem">
+                        <input type="number" name="zip-code" id="zip-code">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="number">Phone Number</label>
+                    <div class="form-elem">
+                        <input type="tel" name="number" id="number">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <button type="button" class="btn-update">Update</button>
+                </div>
+
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+
+    <script src="plagins/jquery.formstyler.min.js"></script>
+
+    <script>
+        (function ($) {
+            $(function () {
+
+                $('select, input[type=radio], input[type=file]').styler();
+
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
