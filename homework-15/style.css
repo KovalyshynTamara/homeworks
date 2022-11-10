@@ -185,7 +185,7 @@ select:focus {
 .jq-selectbox__dropdown {
   margin: 0;
   padding: 0;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 8px 8px;
   background: #FFF;
   box-shadow: none;
   font: 15px/38px "Roboto";
