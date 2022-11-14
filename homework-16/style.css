@@ -152,6 +152,10 @@ header {
 }
 
 footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #16133D;
 }
 footer .container {
