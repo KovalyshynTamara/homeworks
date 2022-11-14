@@ -60,9 +60,6 @@ ul, ol {
   border-radius: 16px;
   position: relative;
 }
-.icon-1:hover {
-  border-color: #3DB370;
-}
 .icon-1 svg {
   width: 38.75px;
   height: 36px;
@@ -71,8 +68,13 @@ ul, ol {
   top: 13px;
 }
 
-.icon-1:hover svg:nth-child(2) {
-  display: none;
+section:hover .icon-1 {
+  border-color: #3DB370;
+}
+
+section:hover svg:nth-child(2) {
+  transition: all 0.2 ease;
+  opacity: 0;
 }
 
 .container h3 {
