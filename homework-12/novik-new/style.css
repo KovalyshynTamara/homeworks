@@ -288,3 +288,6 @@ button.btn-hamb {
 button.btn-hamb:hover { 
     transform: scale(1.05);
 }
+.novik-mob {
+    display: none;
+}

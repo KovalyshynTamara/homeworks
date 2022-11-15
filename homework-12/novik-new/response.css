@@ -50,4 +50,13 @@
   .like-me {
     padding-bottom: 90px;
   }
+
+  img.novik-bb {
+    display: none;
+  }
+
+  img.novik-mob {
+    display: block;
+    margin-bottom: 83px;
+  }
 }
