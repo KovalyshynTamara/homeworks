@@ -1,0 +1,53 @@
+@media screen and (max-width: 860px) {
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #header {
+    display: none;
+  }
+
+  .section-1 {
+    padding-top: 65px;
+  }
+  .section-1 .container .flex {
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 37px;
+  }
+  .section-1 .container .flex h1 {
+    margin-bottom: 0;
+  }
+  .section-1 .container .flex p {
+    padding: 0;
+  }
+
+  #lang {
+    display: none;
+  }
+
+  .container button.btn-hamb {
+    display: block;
+    position: fixed;
+    top: 68px;
+    right: 30px;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 420px) {
+  .skills ul {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .like-me {
+    padding-bottom: 90px;
+  }
+}
