@@ -70,6 +70,9 @@ header {
 aside {
     width: 385px;
     position: sticky;
+    height: 100vh;
+    top: 85px;
+    
     margin-top: 162px;
     li {
         list-style: none;
