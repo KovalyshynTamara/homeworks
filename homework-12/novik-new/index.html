@@ -17,7 +17,13 @@
     
 </head>
 <body>
+
     <div id="mobile_menu" class>
+        <!-- <button id="hamb-btn1" class="hamburger hamburger--spin is-active" type="button" onclick="toggleMenu()">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button> -->
         <nav class="mobile_menu_list">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -31,6 +37,7 @@
             </div>
         </nav>
     </div>
+    <div id="shadow" onclick="toggleMenu()"></div>
     <header id="header">
         <div class="container">
             <nav class="main-menu">
@@ -192,6 +199,7 @@
         function toggleMenu(){
             document.getElementById("mobile_menu").classList.toggle("open")
             document.getElementById("hamb-btn").classList.toggle("is-active")
+            document.getElementById("shadow").classList.toggle("show")
         }
     </script>
 </body>

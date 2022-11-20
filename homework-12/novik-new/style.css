@@ -69,6 +69,9 @@ body {
     color: #090909;
 }
 
+.mobile_menu_list .lang a:hover {
+    color: #828282;
+}
 .mobile_menu_list .lang a {
     text-decoration: none;
     color: #000;
@@ -87,6 +90,25 @@ body {
     right: -37px;
 }
 
+#shadow {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    transition: all .4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#shadow.show {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+}
 
 header {
     padding-top: 30px;
@@ -358,7 +380,6 @@ button.btn-hamb {
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
     background-color: #828282;
     width: 26px;
-   
 }
 
 .novik-mob {
