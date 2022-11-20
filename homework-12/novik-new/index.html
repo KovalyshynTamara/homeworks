@@ -9,12 +9,28 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="fonts/icomoon2/style.css">
 
+    <link rel="stylesheet" href="hamburgers.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="response.css">
 
     
 </head>
 <body>
+    <div id="mobile_menu" class>
+        <nav class="mobile_menu_list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="lang" id="lang1">
+                <a href="#">ua</a> | <a href="#">eng</a>
+            </div>
+        </nav>
+    </div>
     <header id="header">
         <div class="container">
             <nav class="main-menu">
@@ -24,15 +40,17 @@
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
+                </ul> 
+            </nav>   
         </div>
     </header>
     <main>
         <section class="section-1">
             <div class="container">
-                <button type="button" class="btn-hamb">
-                    <img src="hamb.png" alt="">
+                <button id="hamb-btn" class="hamburger hamburger--spin btn-hamb" type="button" onclick="toggleMenu()">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
                 </button>
                 <div class="flex">
                     <h1>Denis<br>Novik</h1>
@@ -170,5 +188,11 @@
         </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu(){
+            document.getElementById("mobile_menu").classList.toggle("open")
+            document.getElementById("hamb-btn").classList.toggle("is-active")
+        }
+    </script>
 </body>
 </html>
