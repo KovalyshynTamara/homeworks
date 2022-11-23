@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifest</title>
+  
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="icons/style.css">
+
+  <link rel="stylesheet" href="hamburgers.min.css">
+
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="response.min.css">
+
+</head>
+<body>
+  <div id="mobile-menu" class>
+    <button id="hamb-btn1" class="hamburger hamburger--spin is-active"  type="button" onclick="toggleMenu()">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <nav class="mobile-menu-list">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>  
+  </div>
+  <div id="shadow" onclick="toggleMenu()"></div>
+  <header id="header">
+    <div class="container flex">
+      <div class="logo">
+        <a href="#">
+          <img src="logo.png" alt="logo">
+        </a>
+      </div>
+      <nav class="flex">
+        <ul class="flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search">
+          <a href="#"><span class="icon-search"></span></a>
+          
+          <button id="hamb-btn" class="hamburger hamburger--spin btn-hamb" type="button" onclick="toggleMenu()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="first">
+      <div class="container">
+        <h1>Manifest is a newborn theme. <br>Clean, simple and fast.</h1>
+      </div>
+    </section>
+    <div class="container">
+      <section class="blog">
+        <h1>Blog</h1>
+        <div class="flex-2">
+          <div class="image">
+            <img src="blog-1.png" alt="blog-1">
+          </div>
+          <div class="tr">
+            <div class="text">
+            <div>Technology, Interface Design</div>
+            <h3>Using UX Design to Build a <br>Sustainable Future</h3>
+            <div class="date">6 May, 2020</div>
+            <p>Transformation has to be driven by everybody, not just by<br>climate groups, and we have a responsibility to use our <br>influence to drive this.<a href="#"><span class="icon-arrow"></span></a></p>
+          </div>
+          </div>
+          
+        </div>
+        <div class="flex-2 reverse">
+          <div class="image">
+            <img src="blog-2.png" alt="blog-1">
+          </div>
+          <div class="tr">
+            <div class="text rev">
+              <div>Technology, Interface Design</div>
+              <h3>Using UX Design to Build a <br>Sustainable Future</h3>
+              <div class="date">6 May, 2020</div>
+              <p>Transformation has to be driven by everybody, not just by <br>climate groups, and we have a responsibility to use our <br>influence to drive this.
+                <a href="#"><span class="icon-arrow"></span></a>
+               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="latest">
+        <div class="section-title flex">
+          <h3>Latest Posts</h3><a href="#">View All<span class="icon-arrow"></span></a>
+        </div>
+        <div class="flex">
+          <div class="latest-post">
+            <div class="flex-row">
+              <div class="image-l">
+                <img src="latest1.png" alt="latest">
+              </div>
+              <div class="text1">
+                <div class="flex span">
+                  <span>Interface Design</span>
+                  <span>8 June, 2020</span>
+                </div>
+                <h3>UX traffic light colours</h3>
+                <p>UI has to make a huge visual difference<br> between warning, an alert and a success.</p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-post">
+            <div class="flex-row row-reverse">
+              <div class="image-l">
+                <img src="latest2.png" alt="latest">
+              </div>
+              <div class="text1">
+                <div class="flex span">
+                  <span>Technology</span>
+                  <span>6 May, 2020</span>
+                </div>
+                <h3>Using UX Design to Build a Sustainable Future</h3>
+                <p>UI has to make a huge visual difference<br> between warning, an alert and a success.</p>
+              </div>
+            </div>
+          </div>
+            
+          <div  class="latest-post">
+            <div class="flex-row">
+              <div class="image-l">
+                <img src="latest3.png" alt="latest">
+              </div>
+              <div class="text1">
+                <div class="flex span">
+                  <span>Visual Design</span>
+                  <span>8 June, 2020</span>
+                </div>
+                <h3>Creativity vs. UX</h3>
+                <p>Is it possible to create a delightful user<br> experience without following best UX <br>practices?</p>
+              </div>   
+            </div>   
+          </div>
+        </div>
+      </section>
+      <section class="most">
+        <div class="section-title flex">
+          <h3>The Most Popular</h3><a href="#">View All<span class="icon-arrow"></span></a>
+        </div>
+        <div class="flex last">
+          <div class="most-popular">
+            <div class="image-most">
+              <img src="most1.png" alt="">
+            </div>
+            <div class="flex span">
+              <span>Interface Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h3>
+              Mentorship Match &mdash; How a simple LinkedIn<br>feature can boost diversity
+            </h3>
+            <p>
+              LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned &mdash; diversity and<br> success go hand in hand
+            </p>
+
+          </div>
+          <div class="most-popular">
+            <div class="image-most">
+              <img src="most2.png" alt="">
+            </div>
+            <div class="flex span">
+              <span>Visual Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h3>
+              Creativity vs. UX
+            </h3>
+            <p>
+              Is it possible to create a delightful user experience without following <br>best UX practices?
+            </p>
+          </div>
+        </div>    
+      </section>
+      <div class="button">
+        <button type="submit" class="btn">Load More</button>
+      </div>
+      <div class="flex full-time">
+        <h3>
+          Full-time UI/UX designer<br> Head of Design at <a href="#">VeronaLabs.com</a><br><a href="#"><span class="icon-arrow"></span></a>
+        </h3>
+        <div>
+          <p>
+            We work with clients around the world from our <br>headquarters in Charleston, South Carolina.
+          </p>
+          <p>
+            We focus on naming, branding, brand narratives,<br>website design and development, and brand<br>experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer  id="footer">
+    <div class="container flex">
+      <div>
+        <h1>Need a project?</h1>
+        <div class="contacts">
+          <a href="tel:+2395550108">(239) 555-0108</a>
+          <a href="mailto:tanya.hill@examle.com">tanya.hill@examle.com</a>
+        </div>
+        
+      </div>
+      <div class="socials">
+        <ul class="flex">
+          <li><a href="#"><span class="icon icon-instagram-icon"></span></a></li>
+          <li><a href="#"><span class="icon icon-facebook-icon"></span></a></li>
+          <li><a href="#"><span class="icon icon-twitter-icon"></span></a></li>
+          <li><a href="#"><span class="icon icon-linkedin-icon"></span></a></li>
+        </ul>
+      </div>
+      
+    </div>
+      <div class="copy">
+        &copy; Copyright Manifest Theme. Allrights reserved
+      </div>
+    
+  </footer>
+
+  <script>
+        function toggleMenu(){
+            document.getElementById("mobile-menu").classList.toggle("open")
+            document.getElementById("hamb-btn").classList.toggle("is-active")
+            document.getElementById("shadow").classList.toggle("show")
+        }
+    </script>
+</body>
+</html>

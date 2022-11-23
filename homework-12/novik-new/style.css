@@ -20,9 +20,7 @@ body {
 body {
     font-family: 'Gilroy';
 }
-/* img {
-    width: 100%;
-} */
+
 .container {
     width: 90%;
     max-width: 944px;
@@ -375,6 +373,7 @@ button.btn-hamb {
 }
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     background-color: #000;
+
 
 }
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
