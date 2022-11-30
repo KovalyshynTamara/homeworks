@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive-navigation</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  
+  <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="top">
+        <ul>
+          <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#mail"/></svg></a></li>
+          <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#bubble"/></svg></a></li>
+          <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#calendar"/></svg></a></li>
+          <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#star"/></svg></a></li>
+        </ul>
+        <div class="lang">
+          <a href="#"><svg><use xlink:href="sprite.svg#lang"/></svg><span>English</span></a>
+          <ul>
+            <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#change"/></svg></a></li>
+            <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#search"/></svg></a></li>
+            <li><a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#set"/></svg></a></li>
+          </ul>
+          <div class="image">
+            <img src="svg/image.svg" alt="image">
+          </div>
+          
+        </div>
+
+      
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div id="sidebar-wrapper" class>
+      <div class="logo">
+        <img src="logo.svg" alt="logo">
+        <a href="#"><span class="text">LightBoard</span></a>
+        <div class="arrow" onclick="toggleMenu()">
+          <img src="svg/arrow.svg" alt="">
+        </div>
+      </div>
+      <nav id="sidebar">
+        <ul class="dash">
+          <li><a href="#"><span class="icon icon-dashboard"></span><span class="text"> Dashboard</span></a></li>
+        </ul>
+        <ul class="lvl1">
+          <li>
+            <a href="#"><span class="text">Apps</span></a>
+            <img class="line" src="svg/line.svg" alt="">
+            <ul>
+              <li><a href="#"><span class="notif  icon icon-mail"></span><span class="text"> Email</span></a></li>
+              <li><a href="#"><span class="notif red icon icon-bubble"></span><span class="text"> Chats</span></a></li>
+              <li><a href="#"><span class="notif yellow icon icon-calendar"></span><span class="text"> Calendar</span></a></li>
+              <li><a href="#"><span class="icon icon-news"></span><span class="text"> News</span></a></li>
+              <li><a href="#"><span class="icon icon-study-1"></span><span class="text"> Knowledge</span></a></li>
+              <li><a href="#"><span class="icon icon-stack"></span><span class="text"> File manager</span></a></li>
+              <li><a href="#"><span class="icon icon-location"></span><span class="text"> Leaflet Maps</span></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span class="text">Auth pages</span></a>
+            <img class="line" src="svg/line.svg" alt="">
+            <ul>
+              <li><a href="#"><span class="icon icon-profile"></span><span class="text"> Profile</span></a></li>
+              <li><a href="#"><span class="icon icon-lock"></span><span class="text"> Permissions</span></a></li>
+              <li><a href="#"><span class="icon icon-log-out"></span><span class="text"> Log Out</span></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span class="text">User Interface</span></a>
+            <img class="line" src="svg/line.svg" alt="">
+            <ul>
+              <li><a href="#"><span class="icon icon-eye"></span><span class="text"> Feather</span></a></li>
+              <li><a href="#"><span class="icon icon-wallet"></span><span class="text"> Ecommerce</span></a></li>
+              <li><a href="#"><span class="icon icon-lab"></span><span class="text"> Components</span></a></li>
+              <li><a href="#"><span class="icon icon-page"></span><span class="text"> Pages</span></a></li>
+              <li><a href="#"><span class="icon icon-pen"></span><span class="text"> Editor</span></a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+
+      </nav>
+    </div>
+
+
+    <div class="container">
+      <img src="bg.png" alt="background">
+    </div>
+  </main>
+      <script>
+        function toggleMenu(){
+            document.getElementById("sidebar-wrapper").classList.toggle("closed")
+        }
+    </script>
+</body>
+</html>
