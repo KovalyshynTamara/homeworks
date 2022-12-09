@@ -1,0 +1,263 @@
+$base-size: 16;
+
+@mixin fz($size_px) {
+  font-size: ($size_px / $base-size) * 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include fz(16);
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #000;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+a, button {
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  .container {
+    .logo {
+      text-transform: uppercase;
+      padding: 38px 0;
+      @include fz(16);
+      line-height: 150%;
+      letter-spacing: 0.5em;
+      
+    }
+  }
+}
+
+#first-section {
+  h1 {
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    @include fz(48);
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 55px;
+  }
+}
+section {
+  padding-bottom: 90px;
+  p.first {
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  p.last {
+    padding-top: 20px;
+  }
+}
+#second-section {
+    
+  .container > p {
+    width: 100%;
+    max-width: 580px;
+    letter-spacing: 0.052em;
+    &.first-1 {
+      margin-bottom: 31px;
+    } 
+  }
+}
+h2.section-title {
+  margin-bottom: 45px;
+}
+h2.section-initial {
+  margin-bottom: 44px;
+}
+
+h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 600;
+  @include fz(28);
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  margin-bottom: 41px;
+}
+
+p {
+  
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.054em;
+  color: #565656;
+}
+
+#footer {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #f4f4f4;
+  .copy {
+    display: flex;
+    justify-content: center;
+    // text-align: center;
+    @include fz(12);
+    line-height: 166%;
+    letter-spacing: 0.1em;
+  }
+  .container {
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: #000;
+      &:hover {
+        color: #a39c9c;
+      }
+    }
+    h1 {
+      font-family: 'Red Hat Display';
+      font-weight: 400;
+      @include fz(48);
+      line-height: 64px;
+      letter-spacing: 0.05em;
+      margin-bottom: 30px;
+    }
+    .tel {
+      margin-bottom: 21px;
+      letter-spacing: 0.1em;
+      color: #000;
+    }
+    .email {
+      letter-spacing: 0.14em;
+    }
+
+    nav ul {
+      padding-top: 57px;
+      display: flex;
+      justify-content: space-between;
+      gap: 23px;
+      li {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #565656;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background-color: #565656;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          @include fz(24);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  header {
+    margin-bottom: 50px;
+    .container .logo {
+      padding: 18px 0;
+    }
+  }
+  #second-section { 
+    padding-bottom: 68px; 
+  .container > p {
+    width: 100%;
+    max-width: 700px;
+  }}
+  #first-section h1 {
+    @include fz(33);
+    line-height: 50px;
+    margin-bottom: 45px;
+  }
+  #footer {
+    padding: 50px 0;
+    .container {
+      margin-bottom: 0;
+      h1 {
+        margin-bottom: 20px;
+      }
+      .tel {
+      margin-bottom: 15px;
+      }
+      .email {
+      margin-bottom: 12px;
+      }
+      flex-direction: column;
+      text-align: center;
+      nav ul {
+        justify-content: center;
+        padding: 40px 0;
+      }
+    } 
+  }
+}
+
+@media screen and (max-width:460px) {
+  header {
+    margin-bottom: 0;
+  }
+    #first-section h1 {
+    @include fz(28);
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  section {
+    padding-bottom: 70px;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  #footer {
+    .copy {
+      @include fz(16);
+      text-align: center;
+      padding: 0 35px;
+    }
+    .container {
+      h1 {
+        @include fz(32);
+        line-height: 42px;
+      }
+      .email {
+      margin-bottom: 0;
+      }
+      
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+   #footer {
+    .copy {
+      padding: 0 20px;
+    }
+  }
+}
