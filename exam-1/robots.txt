@@ -2,5 +2,5 @@ User-Agent: *
 
 Allow: /
 
-Sitemap: https:// /sitemap.ml
-Host:
+Sitemap: https://kovalyshyntamara.github.io/homeworks/exam-1/sitemap.xml
+Host: kovalyshyntamara.github.io/homeworks/exam-1
