@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
 $base-size: 16;
 
 @mixin fz($size_px) {
@@ -7,7 +14,8 @@ $base-size: 16;
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -22,12 +30,15 @@ body {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   vertical-align: top;
 }
 
 a, button {
   cursor: pointer;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
 }
 
@@ -42,29 +53,46 @@ ul, ol {
 }
 
 header {
-  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+          backdrop-filter:blur(4px);
   z-index: 900;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     .logo-menu-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       gap: 111px;
       .logo {
         padding: 32px 0;
       }
       .menu-list {
         padding: 27px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 22px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         a {
           white-space: nowrap;
           text-decoration: none;
@@ -91,8 +119,12 @@ main {
   padding: 100px 0;
   .container {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     .picture {
       position: absolute;
       bottom: 0;
@@ -138,8 +170,12 @@ h2 {
     background: #FDE8F5;
     border-radius: 50px;
     padding: 0 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     .text {
       padding: 109px 0 100px;
       width: 100%;
@@ -169,10 +205,15 @@ h2 {
       margin-bottom: 80px;
     }
     .features-cards-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       gap: 30px;
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       
       .features-card {
         width: 100%;
@@ -267,18 +308,26 @@ h3 {
 
     }
     .card-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding: 0 69px;
-      // gap: 100px;
       .card {
         background-color: #fff;
         border: 1px solid #9C69E2;
-        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+        -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+                box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
         border-radius: 50px;
         padding: 50px 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 15px;
         .pic {
           img {
@@ -321,8 +370,12 @@ h3 {
 #last-section {
   padding-bottom: 104px;
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     .text {
       margin-top: -2px;
       h3 {
@@ -341,8 +394,12 @@ h3 {
     }
     .btn-wrap {
       padding: 15px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       gap: 30px;
     }
   }
@@ -356,7 +413,8 @@ h3 {
   cursor: pointer;
   display: inline-block;
   border: 1px solid #9C69E2;
-  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   background-color: #fff;
   font-family: 'Montserrat';
@@ -409,8 +467,12 @@ h3 {
 footer {
   .container {
     .footer-top {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       margin-bottom: 86px;
       .logo-wrap {
         margin-top: -8px;
@@ -447,8 +509,12 @@ footer {
         }
       }
       nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         max-width: 670px;
         width: 100%;
         a:hover {
@@ -492,8 +558,12 @@ footer {
 
 .socials {
   padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 15px;
   li {
     width: 50px;
@@ -501,9 +571,15 @@ footer {
     border: 1px solid #E9E9EE;
     background-color: #E9E9EE;
     border-radius: 25px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     &:hover {
       background-color: #fff;
     }
@@ -572,6 +648,8 @@ footer {
     border-radius: 3px;
     position: absolute;
     background-color: #000;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
     left: 5px;
   }
@@ -586,14 +664,20 @@ footer {
   }
   &.active {
     span {
-      transform: scale(0);
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
     }
     &::before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
       top: 23px;
     }
     &::after {
-      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
       bottom: 21px;
     }
   }
@@ -608,14 +692,20 @@ footer {
     z-index: 1000;
     width: 350px;
     height: 100vh;
-    transform: translateX(-350px);
+    -webkit-transform: translateX(-350px);
+        -ms-transform: translateX(-350px);
+            transform: translateX(-350px);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
     .button-wrap {
       padding-left: 20px;
     }
 }
 #mobile-menu.open {
-    transform: translateX(0);  
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);  
 }
 
 .mobile-menu-list ul {
@@ -647,8 +737,11 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); 
+            backdrop-filter: blur(4px);
     z-index: 999;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
     opacity: 0;
     visibility: hidden;
@@ -683,23 +776,34 @@ $base-size: 16;
   }
 
   #second-section .container {
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #second-section .container .text {
     padding-top: 0;
     padding-bottom: 0
   }
   #testimonials .container .card-wrap {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
   }
   header .container .logo-menu-wrap {
     .logo img {
-      object-fit: contain;
+      -o-object-fit: contain;
+         object-fit: contain;
     }
     gap: 10px;
     .menu-list {
@@ -707,17 +811,29 @@ $base-size: 16;
     }
   }
   footer .container .footer-top{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #last-section .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .socials {
     padding-top: 35px;
     gap: 0;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     li#facebook {
       margin-bottom: 11px;
     }
@@ -765,7 +881,9 @@ $base-size: 16;
 }
 @media screen and (max-width: 520px){
   footer .container .footer-top {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 20px;
   }
   footer .container .footer-bottom {
@@ -806,8 +924,12 @@ $base-size: 16;
           height: 240px;
         }
         > a {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         }
       } 
     } 
@@ -817,8 +939,11 @@ $base-size: 16;
     .card-wrap {
       padding: 0 10px;
         .card {
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 20px 10px;
         .info .card-text {
           padding-top: 0;
@@ -827,8 +952,11 @@ $base-size: 16;
     }
   } 
   #last-section .container .btn-wrap {
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
