@@ -1,7 +1,7 @@
 function sayHello() {
 
     const userName = prompt('Enter your name');
-    if (userName !== null) {
+    if ((userName !== null) && userName !=='') {
         alert(`Hello, ${userName}!`)
     } else {
         alert(`Enter user name`)
