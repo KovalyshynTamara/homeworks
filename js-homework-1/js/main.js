@@ -1,6 +1,6 @@
 function sayHello() {
 
-    const userName = prompt('Enter your name');
+    const userName = prompt('Enter your name').trim();
     if ((userName !== null) && userName !=='') {
         alert(`Hello, ${userName}!`)
     } else {
