@@ -1,0 +1,6 @@
+User-Agent: * 
+
+Allow: /
+
+Sitemap: 
+Host: kovalyshyntamara.github.io/homeworks/exam-2

@@ -1,0 +1,71 @@
+{
+"status": "ok",
+"totalResults": 60459,
+"articles": [
+{
+"source": {
+"id": "bbc-news",
+"name": "BBC News"
+},
+"author": "https://www.facebook.com/bbcnews",
+"title": "King Charles unadorned new stamp design revealed",
+"description": "Royal Mail reveals the minimalist image that will appear on stamps from 4 April.",
+"url": "https://www.bbc.co.uk/news/uk-64554857",
+"urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/149AA/production/_128549348_charlesstamp.jpg",
+"publishedAt": "2023-02-08T01:05:56Z",
+"content": "The image of King Charles III that is to appear on new stamps from 4 April has been revealed by the Royal Mail.\r\nThe minimalist, unadorned picture, with no crown on the stamp or any other decoration,… [+2781 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Lifehacker.com"
+},
+"author": "Allie Chanthorn Reinmann",
+"title": "You’re Making Chocolate Covered Strawberries All Wrong",
+"description": "The typical chocolate covered strawberry is good. Just good. There’s no arguing with how well the flavors of sweet, tangy fruit pair with bitter dark chocolate, but the flaw is in the design. Berries dipped in molten chocolate usually set in the fridge, where…",
+"url": "https://lifehacker.com/you-re-making-chocolate-covered-strawberries-all-wrong-1850101124",
+"urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/7d88bf6526652d71886f18402b3f03e1.jpg",
+"publishedAt": "2023-02-10T23:00:00Z",
+"content": "The typical chocolate covered strawberry is good. Just good. Theres no arguing with how well the flavors of sweet, tangy fruit pair with bitter dark chocolate, but the flaw is in the design. Berries … [+2519 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "The Guardian"
+},
+"author": "Helena Smith",
+"title": "Athens museum unveils design for major renovation",
+"description": "Work at National Archaeological Museum will be overseen by UK architect David ChipperfieldIt is slated to be the “western world’s museum of museums,” a showcase of Greece’s greatest repository of ancient art.Once completed, the revamped National Archaeologica…",
+"url": "https://www.theguardian.com/world/2023/feb/16/athens-museum-unveils-design-for-major-renovation",
+"urlToImage": "https://i.guim.co.uk/img/media/7b41396eb6d869471d420d832f17b3891047173d/0_164_5000_3000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=147c643e39e5731fe5c30969ff5528d6",
+"publishedAt": "2023-02-16T12:21:48Z",
+"content": "It is slated to be the western worlds museum of museums, a showcase of Greeces greatest repository of ancient art.\r\nOnce completed, the revamped National Archaeological Museum in Athens will, say off… [+3540 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "MacRumors"
+},
+"author": "Joe Rossignol",
+"title": "Apple Dropping Product Design Chief Role, Team to Report to COO Jeff Williams",
+"description": "Apple does not plan to name a replacement for vice president of industrial design Evans Hankey when she departs the company in the coming months, according to Bloomberg's Mark Gurman. Instead, the report claims that Apple's product design team will report dir…",
+"url": "https://www.macrumors.com/2023/02/02/apple-jeff-williams-to-lead-product-design-team/",
+"urlToImage": "https://images.macrumors.com/t/fA8JAuQKC-pd-tgbrw9NvuEv8cM=/1600x/article-new/2022/11/Apple-Design-Team.jpeg",
+"publishedAt": "2023-02-02T16:37:26Z",
+"content": "Apple does not plan to name a replacement for vice president of industrial design Evans Hankey when she departs the company in the coming months, according to Bloomberg's Mark Gurman. Instead, the re… [+1140 chars]"
+},
+{
+"source": {
+"id": "cnn",
+"name": "CNN"
+},
+"author": "Aya Elamroussi",
+"title": "A first report on the Ohio toxic train wreck was released. Here's what it found — and what investigators are still looking into",
+"description": "After federal officials released an initial report concluding that this month's toxic train wreck in Ohio was completely preventable, investigators will begin examining procedures, practices and design prior to the derailment that has sparked long-term concer…",
+"url": "https://www.cnn.com/2023/02/24/us/ohio-train-derailment-east-palestine-friday/index.html",
+"urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230224125530-ohio-toxic-train.jpg?c=16x9&q=w_800,c_fill",
+"publishedAt": "2023-02-24T07:53:22Z",
+"content": "After federal officials released an initial report concluding that this months toxic train wreck in Ohio was completely preventable, investigators will begin examining procedures, practices and desig… [+8043 chars]"
+}
+]
+}
