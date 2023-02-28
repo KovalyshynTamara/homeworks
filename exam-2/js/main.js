@@ -120,7 +120,7 @@ document.addEventListener('scroll', function(){
 //*****NEWS API****///
 
 const NEWSAPI_KEY = 'd69e604e046740efba34fb89d1b6ee4d'
-const DEV_MODE = false
+const DEV_MODE = true
 
 async function getNews() {
     const URL = DEV_MODE ? '/data/news.json' : 'https://newsapi.org/v2/everything'
