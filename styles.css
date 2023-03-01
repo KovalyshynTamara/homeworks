@@ -29,7 +29,7 @@ ul li a:hover {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(4, 350px);
     gap: 20px;
     grid-template-rows: 1fr;
     
