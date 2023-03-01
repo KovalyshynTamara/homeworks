@@ -466,10 +466,11 @@ ul, ol {
       color: $base-color;
       font-family: 'Montserrat';
       font-weight: 400;
-        border: 3px solid #55B7FF;
+
 
       &:hover {
-        border: 3px solid #7e5aff;
+        transition: all .6s  ease;
+        transform: translateY(-5px);
       }
 
       .news-img {

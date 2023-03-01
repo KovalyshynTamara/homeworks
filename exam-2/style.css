@@ -442,10 +442,10 @@ ul, ol {
   color: #2C4058;
   font-family: "Montserrat";
   font-weight: 400;
-  border: 3px solid #55B7FF;
 }
 #news-section .my-slider .card:hover {
-  border: 3px solid #7e5aff;
+  transition: all 0.6s ease;
+  transform: translateY(-5px);
 }
 #news-section .my-slider .card .news-img {
   width: 100%;
