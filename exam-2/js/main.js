@@ -119,21 +119,10 @@ document.addEventListener('scroll', function(){
 
 //*****NEWS API****///
 
-const NEWSAPI_KEY = 'd69e604e046740efba34fb89d1b6ee4d'
-const DEV_MODE = true
-
+const NEWSAPI_KEY = '35938ecea6cc9a8b7ef506e68604972f'
 async function getNews() {
-    const URL = DEV_MODE ? '/data/news.json' : 'https://newsapi.org/v2/everything'
-    return await axios.get( URL, {
-        params: {
-            apiKey: NEWSAPI_KEY,
-            q: 'design',
-            searchIn: 'title',
-            language: 'en',
-            pageSize: 5,
-            page: 1
-        }
-    })
+    const URL = 'https://gnews.io/api/v4/search?q=design&lang=en&max=5&apikey=' + NEWSAPI_KEY
+    return await axios.get(URL)
         .then(resp => {
             return resp.data
         })
@@ -154,7 +143,7 @@ function newsHTML(news) {
     return `
         <div class="card">
             <a href="${news.url}" title="${news.title}" target="_blank">
-            <img  class="news-img" src="${news.urlToImage}" alt=""/>
+            <img  class="news-img" src="${news.image}" alt=""/>
                 </a>
             <div class="card-body">
             
@@ -167,13 +156,12 @@ function newsHTML(news) {
                 <img src="imgs/avatar.png" alt="">
               </div>
               <div class="info">
-                <div class="name" title="${news.author}">${news.author}</div>
+                <div class="name" title="${news.source.name}">${news.source.name}</div>
                 <div class="date">${newsDate}</div>
               </div>
             </div>
         </div>
-
-        `
+       `
 }
 
 //********FORM*********//
