@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playlist</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+
+<script>
+    
+    
+    const app = document.getElementById('app')
+
+const playList = [
+{
+ author: "LED ZEPPELIN",
+ song:"STAIRWAY TO HEAVEN"
+},
+{
+ author: "QUEEN",
+ song:"BOHEMIAN RHAPSODY"
+},
+{
+ author: "LYNYRD SKYNYRD",
+ song:"FREE BIRD"
+},
+{
+ author: "DEEP PURPLE",
+ song:"SMOKE ON THE WATER"
+},
+{
+ author: "JIMI HENDRIX",
+ song:"ALL ALONG THE WATCHTOWER"
+},
+{
+ author: "AC/DC",
+ song:"BACK IN BLACK"
+},
+{
+ author: "QUEEN",
+ song:"WE WILL ROCK YOU"
+},
+{
+ author: "METALLICA",
+ song:"ENTER SANDMAN"
+}
+
+];
+
+const ol = document.createElement('ol')
+
+playList.forEach((s) => {
+    const li = document.createElement('li')
+    li.innerText =  s.song
+    const b = document.createElement('b')
+    b.innerText = s.author + " : "
+    li.prepend(b)
+    ol.append(li)
+    
+})
+app.append(ol)
+
+   </script> 
+</bod>
+</html>

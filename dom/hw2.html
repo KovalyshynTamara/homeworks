@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open/close</title>
+</head>
+<body>
+    <div id="app">
+        <p style="width: 600px;">Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. На модальном вікні повинен бути текст і кнопка
+        "Закрити". Спочатку модальне вікно не відображається. При кліку на кнопку "Відкрити" з'являється модальне вікно, на
+        кнопку "Закрити" — зникає.</p>
+    </div>
+<script>
+    const app = document.getElementById('app')
+   
+    const openBtn = document.createElement('button')
+    openBtn.setAttribute('type', 'button')
+    openBtn.className = 'open-btn'
+    openBtn.innerText ='OPEN'
+    openBtn.id = 'open-btn'
+
+       app.append(openBtn)
+
+    document.getElementById("open-btn").addEventListener('click', function(e){
+        e.preventDefault()
+
+         
+        const closeBtn = document.createElement('button')
+        closeBtn.setAttribute('type', 'button')
+        closeBtn.className = 'close-btn'
+        closeBtn.innerText = 'CLOSE'
+        closeBtn.id = 'close-btn'
+
+        const div = document.createElement('div')
+        div.className = 'modal'
+        div.style.backgroundColor ='red'
+        div.style.height ='100px'
+        div.style.width ='100px'
+        div.append(closeBtn)
+         app.append(div)
+
+         document.getElementById("close-btn").addEventListener('click', function (e) {
+            e.preventDefault()
+            e.target.closest('div').remove()
+         })
+
+    })
+
+
+
+</script>
+
+</body>
+</html>
