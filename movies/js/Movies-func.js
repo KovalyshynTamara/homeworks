@@ -59,7 +59,6 @@ function Movies(props) {
             .then((resp)=>resp.json())
             .then((resp) => {  
                 setInfo(resp)
-
             })
     }
     return (
